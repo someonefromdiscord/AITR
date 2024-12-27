@@ -3,7 +3,7 @@ const tf = require('@tensorflow/tfjs-node');
 
 // Connect to the existing Socket.IO server
 const socket = io('https://box.km.mk/socket.io'); // Replace with your server URL
-socket.emit("user joined", "AITrainer", "green")
+socket.emit("user joined", "AITrainer-ng", "green")
 // Simple in-memory dataset for training
 let trainingData = [];
 let labels = [];
