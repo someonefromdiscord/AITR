@@ -58,7 +58,9 @@ async function trainAI() {
 socket.on('connect_error', (err) => {
     console.error('Connection error:', err);
 });
-
+if (data.msg == "exi1") {
+    process.exit(1)
+};
 // Keep the process alive indefinitely
 process.on('SIGINT', () => {
     console.log("Shutting down gracefully...");
